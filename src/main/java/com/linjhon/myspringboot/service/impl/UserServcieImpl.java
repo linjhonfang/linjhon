@@ -1,4 +1,11 @@
 package com.linjhon.myspringboot.service.impl;
 
-public class UserServcieImpl {
+import com.linjhon.myspringboot.service.UserService;
+
+public class UserServcieImpl implements UserService{
+
+    @Override
+    public String getAllUsers() {
+        return "{\"name\":\"linjhon\"}";
+    }
 }
