@@ -8,6 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 public class MyspringbootApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
+		System.out.println("{\"users\":[{\"name\":\"linjhon\"},{\"name\":\"zhangsan\"}]}");
 		System.out.println("main starting...");
 		SpringApplication.run(MyspringbootApplication.class, args);
 	}
