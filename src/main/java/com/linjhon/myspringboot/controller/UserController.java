@@ -1,5 +1,7 @@
 package com.linjhon.myspringboot.controller;
 
+import com.linjhon.myspringboot.bo.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +17,9 @@ import java.io.PrintWriter;
 @RestController("/")
 public class UserController {
 
+
     @GetMapping("/user/get")
     public String getUserInfo(){
-
         return "zhangxueyou";
     }
 
