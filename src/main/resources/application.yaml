@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: consul-client
+  cloud:
+    consul:
+      host: 122.51.87.142
+      port: 8500
