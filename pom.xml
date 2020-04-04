@@ -142,6 +142,20 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <configuration>
+                    <imageName>${project.name}:${project.version}</imageName>
+                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+                    <skipDockerBuild>false</skipDockerBuild>
+                    <resource>
+                        <directory>${project.build.directory}</directory>
+                        <include>${project.build.finalName}</include>
+                    </resource>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <!--20190303-->

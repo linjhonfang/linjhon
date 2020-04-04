@@ -55,6 +55,7 @@ public class UserController {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
         String startTime = df.format(new Date());
         System.out.println(startTime);
+        System.out.println(multipartFile.getSize()/1048576+"MB");
         if (!multipartFile.isEmpty()) {
             //设置文件的保存路径
             try {
