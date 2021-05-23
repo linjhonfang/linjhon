@@ -1,4 +1,4 @@
-package com.linjhon.myspringboot.leetcode.dp;
+package com.linjhon.myspringboot.leetcode.binarytree.dp;
 
 public class StockTest {
     public static void main(String[] args) {
